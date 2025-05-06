@@ -2,7 +2,7 @@ import React from 'react';
 import Card from '../components/Card/card';
 import { useState, useEffect } from 'react';
 import getAllCountries from '../api/api';
-
+import styles from './Countries.module.css';
 
 function Countries() {
     const [countries, setCountries] = useState([]);
@@ -16,7 +16,7 @@ function Countries() {
     }, []);
 
     return (
-        <div className="countries-container">
+        <div className={styles.countries_container}>
             {countries.map((country) => (
                 <Card key={country.abbr} name={country.name} png={country.flag} />
             ))}

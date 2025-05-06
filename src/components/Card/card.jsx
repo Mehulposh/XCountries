@@ -1,9 +1,10 @@
 import React from 'react';
+import styles from './card.module.css';
 
 function Card({name, png}) {
     return (
-        <div className="card">
-        <img src={png} alt={name} className="card-image" />
+        <div className={styles.card}>
+        <img src={png} alt={name} className={styles.CardImg} />
         <h2>{name}</h2>
         </div>
     );
