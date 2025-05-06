@@ -8,6 +8,7 @@ async function getAllCountries() {
     return response.data;
   } catch (error) {
     console.error("Error fetching data: ", error);
+    return [];
     
   }
 }
