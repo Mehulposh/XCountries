@@ -7,7 +7,7 @@ async function getAllCountries() {
     const response = await axios.get(EndPoint);
     return response.data;
   } catch (error) {
-    console.error("Error fetching data:", error);
+    console.error("Error fetching data: ", error);
     
   }
 }
