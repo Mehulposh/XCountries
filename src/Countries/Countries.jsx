@@ -18,7 +18,7 @@ function Countries() {
     return (
         <div className={styles.countries_container}>
             {countries.map((country) => (
-                <Card key={country.names} name={country.name} png={country.flag} />
+                <Card key={country.name} name={country.name} png={country.flag} />
             ))}
         </div>
     );
